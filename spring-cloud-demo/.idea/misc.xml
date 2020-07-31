@@ -4,6 +4,9 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-sleuth-demo-1/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-sleuth/pom.xml" />
+        <option value="$PROJECT_DIR$/sleuth-demo-2/pom.xml" />
       </list>
     </option>
   </component>
