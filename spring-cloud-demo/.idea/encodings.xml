@@ -5,5 +5,6 @@
     <file url="file://$PROJECT_DIR$/eureka-sleuth" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sleuth-demo-1" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sleuth-demo-2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin-sleuth" charset="UTF-8" />
   </component>
 </project>

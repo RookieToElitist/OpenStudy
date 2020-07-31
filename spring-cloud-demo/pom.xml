@@ -31,6 +31,7 @@
         <!--学习sleuth-->
         <module>eureka-sleuth</module>
         <module>sleuth-demo-1</module>
+        <module>zipkin-sleuth</module>
 
     </modules>
     <!--版本依赖管理，建议加上版本-->

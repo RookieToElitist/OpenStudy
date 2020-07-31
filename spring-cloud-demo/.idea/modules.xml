@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/sleuth-demo-1/sleuth-demo-1.iml" filepath="$PROJECT_DIR$/sleuth-demo-1/sleuth-demo-1.iml" />
       <module fileurl="file://$PROJECT_DIR$/sleuth-demo-2/sleuth-demo-2.iml" filepath="$PROJECT_DIR$/sleuth-demo-2/sleuth-demo-2.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-demo.iml" filepath="$PROJECT_DIR$/spring-cloud-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zipkin-sleuth/zipkin-sleuth.iml" filepath="$PROJECT_DIR$/zipkin-sleuth/zipkin-sleuth.iml" />
     </modules>
   </component>
 </project>
