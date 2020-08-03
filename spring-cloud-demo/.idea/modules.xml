@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/eureka-demo-1/eureka-demo-1.iml" filepath="$PROJECT_DIR$/eureka-demo-1/eureka-demo-1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-demo-2/eureka-demo-2.iml" filepath="$PROJECT_DIR$/eureka-demo-2/eureka-demo-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-demo-3/eureka-demo-3.iml" filepath="$PROJECT_DIR$/eureka-demo-3/eureka-demo-3.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-sleuth/eureka-sleuth.iml" filepath="$PROJECT_DIR$/eureka-sleuth/eureka-sleuth.iml" />
       <module fileurl="file://$PROJECT_DIR$/sleuth-demo-1/sleuth-demo-1.iml" filepath="$PROJECT_DIR$/sleuth-demo-1/sleuth-demo-1.iml" />
       <module fileurl="file://$PROJECT_DIR$/sleuth-demo-2/sleuth-demo-2.iml" filepath="$PROJECT_DIR$/sleuth-demo-2/sleuth-demo-2.iml" />

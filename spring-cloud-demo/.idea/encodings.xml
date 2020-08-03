@@ -2,6 +2,9 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-demo-1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-demo-2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-demo-3" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-sleuth" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sleuth-demo-1" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sleuth-demo-2" charset="UTF-8" />

@@ -28,6 +28,13 @@
 
     <modules>
 
+        <!--学习单机版eureka-->
+        <module>eureka-demo-1</module>
+
+        <!--学习集群版eureka-->
+        <module>eureka-demo-2</module>
+        <module>eureka-demo-3</module>
+
         <!--学习sleuth-->
         <module>eureka-sleuth</module>
         <module>sleuth-demo-1</module>
