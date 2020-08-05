@@ -6,6 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="bus-rabbitmq-demo-1" />
+        <module name="config-bus-rabbitmq" />
+        <module name="eureka-config-bus-rabbitmq" />
         <module name="eureka-demo-1" />
         <module name="eureka-demo-2" />
         <module name="eureka-demo-3" />
@@ -17,6 +20,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="bus-rabbitmq-demo-1" target="1.8" />
+      <module name="config-bus-rabbitmq" target="1.8" />
+      <module name="eureka-config-bus-rabbitmq" target="1.8" />
       <module name="eureka-demo-1" target="1.8" />
       <module name="eureka-demo-2" target="1.8" />
       <module name="eureka-demo-3" target="1.8" />

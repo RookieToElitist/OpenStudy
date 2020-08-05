@@ -35,6 +35,11 @@
         <module>eureka-demo-2</module>
         <module>eureka-demo-3</module>
 
+        <!--学习消息总线Bus-->
+        <module>bus-rabbitmq-demo-1</module>
+        <module>config-bus-rabbitmq</module>
+        <module>eureka-config-bus-rabbitmq</module>
+
         <!--学习sleuth-->
         <module>eureka-sleuth</module>
         <module>sleuth-demo-1</module>
