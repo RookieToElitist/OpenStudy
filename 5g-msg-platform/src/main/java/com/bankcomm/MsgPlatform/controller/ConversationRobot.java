@@ -29,6 +29,10 @@ public class ConversationRobot {
             res.setSessionState("X");
             res.setMessage("Hello");
             return  gson.toJson(res);
+        }else if ("url".equals(req.getMessage())){
+            res.setSessionState("X");
+            res.setMessage("https://www.baidu.com/");
+            return  gson.toJson(res);
         }else {
             res.setSessionState("A");
             res.setMessage("请问您需要了解什么?");
