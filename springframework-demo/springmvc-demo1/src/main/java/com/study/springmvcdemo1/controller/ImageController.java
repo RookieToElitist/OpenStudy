@@ -15,6 +15,13 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 
+/*
+
+
+使用@RequestMapping来返回服务端的图片
+
+ */
+
 @RestController
 public class ImageController {
 
