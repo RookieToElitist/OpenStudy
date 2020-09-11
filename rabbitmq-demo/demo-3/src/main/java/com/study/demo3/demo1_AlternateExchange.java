@@ -26,26 +26,28 @@ public class demo1_AlternateExchange {
         factory.setPassword("guest");
 
         Connection connection = null;
+
         try {
             connection = factory.newConnection();
-            Channel channel = connection.createChannel();
 
-            //定义备份交换器、队列及绑定关系
-            channel.exchangeDeclare("demo1_unNormalExchangeName","fanout",true,true,null);
-            channel.queueDeclare("demo1_unNormalQueueName",true,false,false,null);
-            channel.queueBind("demo1_unNormalQueueName","demo1_unNormalExchangeName","");
+
+            Channel channelForAlternateExchange = connection.createChannel();
+
+            //定义备份交换器(类型为fanout)、队列及绑定关系（可以是不同的Channel）
+            channelForAlternateExchange.exchangeDeclare("demo1_unNormalExchangeName","fanout",true,true,null);
+            channelForAlternateExchange.queueDeclare("demo1_unNormalQueueName",true,false,false,null);
+            channelForAlternateExchange.queueBind("demo1_unNormalQueueName","demo1_unNormalExchangeName","");
 
             //设定运行时exchange参数
             Map<String,Object> params=new HashMap<>();
-            params.put("alternate-exchange","myA_E");
+            params.put("alternate-exchange","demo1_unNormalExchangeName");
+
+            Channel channelForNormal = connection.createChannel();
 
             //定义正常交换器、队列及绑定关系,
-            // 注意该交换器只能绑定一个备份交换器，如将myA_E改为myA_E_1，
-            // 则报inequivalent arg 'alternate-exchange' for exchange 'demo1_NormalExchangeName' in vhost '/': received 'myA_E_1' but current is 'myA_E',
-            //此时需要将之前的备份交换器、对应队列都删除才可以（即重新开始）
-            channel.exchangeDeclare("demo1_NormalExchangeName","direct",true,true,params);
-            channel.queueDeclare("demo1_NormalQueueName",true,false,false,null);
-            channel.queueBind("demo1_NormalQueueName","demo1_NormalExchangeName","normal_rk");
+            channelForNormal.exchangeDeclare("demo1_NormalExchangeName","direct",true,true,params);
+            channelForNormal.queueDeclare("demo1_NormalQueueName",true,false,false,null);
+            channelForNormal.queueBind("demo1_NormalQueueName","demo1_NormalExchangeName","normal_rk");
 
 
             //发送消息
@@ -59,7 +61,7 @@ public class demo1_AlternateExchange {
             //（1）正常测试：normal_rk
 //            channel.basicPublish("demo1_NormalExchangeName", "normal_rk", basicProperties, "test_AlternateExchange".getBytes());
             //（2）异常测试
-            channel.basicPublish("demo1_NormalExchangeName", "error_rk", basicProperties, "test_AlternateExchange".getBytes());
+            channelForNormal.basicPublish("demo1_NormalExchangeName", "error_rk", basicProperties, "test_AlternateExchange".getBytes());
 
         } catch (IOException e) {
             e.printStackTrace();
