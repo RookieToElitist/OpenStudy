@@ -13,24 +13,26 @@
     <!--2.此标签内定义版本号-->
     <properties>
         <junit.version>4.12</junit.version>
-        <rabbitmq.version>4.2.1</rabbitmq.version>
     </properties>
 
     <modules>
         <module>demo-1</module>
+        <module>demo-2</module>
+        <module>demo-3</module>
+        <module>demo-4</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
 
             <!--rabbitMQ父版本-->
-            <dependency>
-                <groupId>com.rabbitmq</groupId>
-                <artifactId>amqp-client</artifactId>
-                <version>${rabbitmq.version}</version>
-                <!--<type>pom</type>-->
-                <!--<scope>import</scope>-->
-            </dependency>
+            <!--<dependency>-->
+                <!--<groupId>com.rabbitmq</groupId>-->
+                <!--<artifactId>amqp-client</artifactId>-->
+                <!--<version>${rabbitmq.version}</version>-->
+                <!--&lt;!&ndash;<type>pom</type>&ndash;&gt;-->
+                <!--&lt;!&ndash;<scope>import</scope>&ndash;&gt;-->
+            <!--</dependency>-->
 
             <dependency>
                 <groupId>junit</groupId>

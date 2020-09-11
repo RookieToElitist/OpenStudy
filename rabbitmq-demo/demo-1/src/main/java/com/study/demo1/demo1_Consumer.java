@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
 /**
- * 案例1：消费生产者发送的消息
+ * 入门：消费生产者发送的消息
  */
 public class demo1_Consumer {
 

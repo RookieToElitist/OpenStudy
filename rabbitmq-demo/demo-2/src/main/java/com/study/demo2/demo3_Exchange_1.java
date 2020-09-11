@@ -6,7 +6,10 @@ import com.rabbitmq.client.ConnectionFactory;
 
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
+/*
+学习exchangeDeclarePassive()方法
 
+ */
 public class demo3_Exchange_1 {
 
     public static void main(String[] args)  {

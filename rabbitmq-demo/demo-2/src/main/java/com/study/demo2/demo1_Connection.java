@@ -1,9 +1,8 @@
 package com.study.demo2;
 
 import com.rabbitmq.client.Channel;
-import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
-import com.rabbitmq.client.MessageProperties;
+
 
 import java.io.IOException;
 import java.net.URISyntaxException;

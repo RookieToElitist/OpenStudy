@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
 /*
-消费者消费消息
+入门：生产者
  */
 public class demo1_Producer {
 
