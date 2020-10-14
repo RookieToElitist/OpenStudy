@@ -12,7 +12,7 @@
 
     <!--2.此标签内定义版本号-->
     <properties>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
     </properties>
 
     <modules>
